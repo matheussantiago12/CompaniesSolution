@@ -140,3 +140,23 @@ Outro exemplo de um arquivo de importação de declarações:
 	2020-03-01,3,1
 
 > Lembrando que existem arquivos CSV disponíveis na pasta **additional**, que fica na raiz do projeto.
+
+## Testes unitários
+
+Para realizar os testes unitários, você deve estar na pasta backend e usar os seguintes comandos:
+
+### Company
+
+Criar empresa:
+> vendor/bin/phpunit --filter=test_should_create_company
+
+Listar todas as empresas:
+> vendor/bin/phpunit --filter=test_should_return_all_companies
+
+Listar empresa por ID:
+> vendor/bin/phpunit --filter=test_should_return_company
+
+### Declaration
+
+Listar declarações por ID da empresa:
+> vendor/bin/phpunit --filter=test_should_return_all_declarations_by_company_id
