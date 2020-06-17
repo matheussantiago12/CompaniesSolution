@@ -26,7 +26,6 @@ class CompanyRepository
     {
         $company = new Company();
         $company->name = $request->name;
-        $company->score = $request->score;
         $company->save();
 
         return $company;

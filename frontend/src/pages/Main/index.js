@@ -9,7 +9,6 @@ export default function Main() {
     const [companies, setCompanies] = useState([]);
 
     const [name, setName] = useState("");
-    const [score, setScore] = useState(0);
 
     useEffect(() => {
         api.get(`/api/companies`)
@@ -21,10 +20,9 @@ export default function Main() {
     function handleSubmit(e) {
         e.preventDefault();
 
-        if (name != '') {
+        if (name !== '') {
             api.post('/api/company', {
-                name: name,
-                score: 50
+                name: name
             });
 
             api.get(`/api/companies`)

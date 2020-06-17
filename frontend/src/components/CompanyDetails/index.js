@@ -14,7 +14,7 @@ export default function CompanyDetails(props) {
 
     async function handleSubmit(e) {
 
-        if (declaration != null) {
+        if (declaration !== null) {
             const data = new FormData(); 
             data.append('declaration', declaration);
             
@@ -49,13 +49,13 @@ export default function CompanyDetails(props) {
                     {declarations.map((declaration, idx) => (
                         <tr key={idx}>
                             <td>{ declaration.date }</td>
-                            {declaration.type == 1 &&
+                            {declaration.type === 1 &&
                                 <>
                                     <td>Dependência financeira</td>
                                     <td className="result negative">-4%</td>
                                 </>
                             }
-                            {declaration.type == 0 &&
+                            {declaration.type === 0 &&
                                 <>
                                     <td>Nota fiscal emitida</td>
                                     <td className="result positive">+2%</td>
