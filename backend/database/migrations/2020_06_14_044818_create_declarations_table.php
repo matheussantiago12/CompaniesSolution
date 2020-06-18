@@ -17,7 +17,7 @@ class CreateDeclarationsTable extends Migration
             $table->id('declarations_id');
             $table->date('date');
             $table->integer('type');
-            $table->integer('company_id');
+            $table->unsignedBigInteger('company_id');
             $table->foreign('company_id')->references('id')->on('companies');
         });
     }

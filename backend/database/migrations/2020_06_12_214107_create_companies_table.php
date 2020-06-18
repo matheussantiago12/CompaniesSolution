@@ -15,7 +15,7 @@ class CreateCompaniesTable extends Migration
     {
         Schema::create('companies', function (Blueprint $table) {
             $table->id('id');
-            $table->float('score');
+            $table->float('score')->default(50);
             $table->string('name');
             $table->timestamps();
         });
