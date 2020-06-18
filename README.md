@@ -148,15 +148,15 @@ Para realizar os testes unitários, você deve estar na pasta backend e usar os 
 ### Company
 
 Criar empresa:
-> vendor/bin/phpunit --filter=test_should_create_company
+> phpunit --filter test_should_create_company ../../tests/CompanyTest.php
 
 Listar todas as empresas:
-> vendor/bin/phpunit --filter=test_should_return_all_companies
+> phpunit --filter test_should_return_all_companies ../../tests/CompanyTest.php
 
 Listar empresa por ID:
-> vendor/bin/phpunit --filter=test_should_return_company
+> phpunit --filter test_should_return_company ../../tests/CompanyTest.php
 
 ### Declaration
 
 Listar declarações por ID da empresa:
-> vendor/bin/phpunit --filter=test_should_return_all_declarations_by_company_id
+> phpunit --filter test_should_return_all_declarations_by_company_id ../../tests/DeclarationTest.php
