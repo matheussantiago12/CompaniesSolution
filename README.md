@@ -67,7 +67,7 @@ Por último, vamos iniciar o servidor com o seguinte comando:
 
 
 
-Para testar se a API está funcionando corretamente, acesse **localhost:8000/api/companies** e confira o retorno da página. Caso retorne um JSON com alguns registros, está tudo funcionando corretamente. Caso contŕario, revise os passos anteriores, e se precisar, use o google.
+Para testar se a API está funcionando corretamente, acesse **localhost:8000/api/companies** e confira o retorno da página. Caso retorne um  array vazio, está tudo funcionando corretamente. Caso contŕario, revise os passos anteriores, e se precisar, use o google.
 
 
 
